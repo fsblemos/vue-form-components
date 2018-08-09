@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field Component should render a default field 1`] = `
+<div
+  class="vf-field"
+>
+  <label />
+   
+</div>
+`;
