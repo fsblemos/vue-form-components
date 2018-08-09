@@ -28,4 +28,9 @@ describe('Input Component', () => {
     wrapper.vm.onInput(eventMock);
     expect(wrapper.emitted().input).toEqual([[value]]);
   });
+
+  it('should disable input', () => {
+    const wrapper = shallowComponent({ disabled: true });
+    expect(wrapper.element.disabled).toBe(true);
+  });
 });
