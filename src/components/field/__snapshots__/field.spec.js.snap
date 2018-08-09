@@ -4,7 +4,19 @@ exports[`Field Component should render a default field 1`] = `
 <div
   class="vf-field"
 >
-  <label />
+  <!---->
    
+</div>
+`;
+
+exports[`Field Component should render a field with label and input 1`] = `
+<div
+  class="vf-field"
+>
+  <label>
+    label
+  </label>
+   
+  <input />
 </div>
 `;
