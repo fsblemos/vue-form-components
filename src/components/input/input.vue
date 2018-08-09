@@ -9,9 +9,9 @@ export default {
     value: [String, Number],
   },
   methods: {
-    onInput() {
-      
-    }
-  }
+    onInput(event) {
+      this.$emit('input', event.target.value);
+    },
+  },
 };
 </script>

@@ -20,4 +20,12 @@ describe('Input Component', () => {
     input.trigger('input');
     expect(methods.onInput).toHaveBeenCalledWith(expect.any(Event));
   });
+
+  it('should emit an input event with target value', () => {
+    const value = 'value';
+    const wrapper = shallowComponent();
+    const eventMock = { target: { value } };
+    wrapper.vm.onInput(eventMock);
+    expect(wrapper.emitted().input).toEqual([[value]]);
+  });
 });
