@@ -1,5 +1,5 @@
 <template>
-  <input :value="value">
+  <input :value="value" @input="onInput">
 </template>
 
 <script>
@@ -8,5 +8,10 @@ export default {
   props: {
     value: [String, Number],
   },
+  methods: {
+    onInput() {
+      
+    }
+  }
 };
 </script>
